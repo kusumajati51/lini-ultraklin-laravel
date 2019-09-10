@@ -1,0 +1,198 @@
+html,
+body {
+    background: #ECEFF1;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+.full-page {
+    min-height: 100vh;
+}
+
+.text-green {
+    color: #4CAF50;
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+input.rounded {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.uk--login-page {
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+}
+
+.uk--login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uk--login-box {
+    background: #FFF;
+    width: 680px;
+    height: 360px;
+}
+
+.uk--login-box-content {
+    background: #0072ff;
+    width: 340px;
+}
+
+.uk--login-box-form {
+    width: 260px;
+    padding: 40px;
+}
+
+.uk--login-box-form input {
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.uk--login-box-form button {
+    font-size: 0.8rem;
+}
+
+.uk--login-box-form button.uk--button-primary {
+    background: #0072ff;
+    border-radius: 50px;
+    color: #FFF;
+}
+
+.uk--login-box-form p.uk--input-error {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #F44336;
+}
+
+.uk--tool-header {
+    height: 50px;
+    line-height: 50px;
+}
+
+.uk--tool-header-icon {
+    width: 50px;
+    border-right: solid 1px rgb(229, 229, 229);
+    text-align: center;
+    line-height: 50px;
+}
+
+.uk--tool-header-back {
+    display: inline-block;
+    width: 50px;
+    border-right: solid 1px rgb(229, 229, 229);
+    text-align: center;
+    line-height: 50px;
+    color: #409eff;
+}
+
+.uk--tool-header-title {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.uk--tool-header-button {
+    width: 50px;
+    border-left: solid 1px rgb(229, 229, 229);
+    text-align: center;
+    line-height: 50px;
+}
+
+.uk--box:not(:first-child) {
+    margin-top: 25px;
+}
+
+.uk--box {
+    border: solid 1px rgb(229, 229, 229);
+}
+
+.uk--box.no-border {
+    border: none;
+}
+
+.uk--box dt {
+    font-size: 0.7rem;
+}
+
+.uk--box dd,
+.uk--box th,
+.uk--box td {
+    font-size: 0.85rem;
+}
+
+.uk--box-header {
+    background: #F5F5F5;
+    border-bottom: solid 1px rgb(229, 229, 229);
+    padding: 10px;
+}
+
+.uk--box-body-with-padding {
+    padding: 10px;
+}
+
+.uk--box-body table {
+    margin-bottom: 0px;
+}
+
+.uk--box-footer {
+    border-top: solid 1px rgb(229, 229, 229);
+    padding: 10px;
+}
+
+.uk--box-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.uk--box-text {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.uk--box-number {
+    display: block;
+    font-size: 2rem;
+}
+
+.uk--simple-cart-item li>div>div {
+    display: table-row;
+}
+
+.uk--simple-cart-item li>div>div>* {
+    display: table-cell;
+    vertical-align: middle;
+    height: 36px;
+}
+
+.uk--simple-cart-item li>div>div:nth-child(2) {
+    text-align: center;
+}
+
+.uk--simple-cart-item h5 {
+    margin: 0px;
+    font-size: 0.85rem;
+}
+
+.uk--simple-cart-item span {
+    font-size: 0.7rem;
+}
+
+.uk--simple-cart-item a {
+    font-size: 0.75rem;
+}

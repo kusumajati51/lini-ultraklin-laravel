@@ -1,0 +1,97 @@
+html, body {
+    background-color: #ECEFF1;
+}
+
+.app--card-header-tool {
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+
+    .app--card-title {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .app--card-header-tool-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .app--card-header-tool-button {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+.uk-card-small {
+    .app--card-header-tool {
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+
+        .app--card-title {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .app--card-header-tool-icon {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .app--card-header-tool-button {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+}
+
+.app--card-title {
+    font-size: 1rem;
+    color: #333;
+}
+
+.app--box-count {
+    .app--box-count-text {
+        font-size: 0.7rem;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    .app--box-count-number {
+        font-size: 2rem;
+        color: #333;
+    }
+}
+
+.app--border-left {
+    border-left: solid 1px #E5E5E5;
+}
+
+.app--border-right {
+    border-right: solid 1px #E5E5E5;
+}
+
+.app--list-label {
+    display: block;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.app--list-text {
+    display: block;
+    color: #333;
+    font-size: 0.9rem;
+}

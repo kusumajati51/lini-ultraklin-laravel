@@ -1,0 +1,89 @@
+<template>
+  <div class="uk-card uk-card-default uk-card-small">
+    <div class="uk-card-header app--card-header-tool">
+      <div class="uk-grid-collapse" uk-grid>
+        <div class="uk-width-auto">
+          <div class="app--card-header-tool-icon app--border-right">
+            <i class="fas fa-award fa-lg"></i>
+          </div>
+        </div>
+        <div class="uk-width-expand">
+          <h3 class="app--card-title">AGENT LEVELS</h3>
+        </div>
+        <div class="uk-width-auto">
+          <div class="app--card-header-tool-button app--border-left">
+            <router-link :to="{ name: 'agent-level-create' }">
+              <i class="fas fa-plus"></i>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uk-card-body">
+      <div class="uk-overflow-auto">
+        <table class="uk-table uk-table-divider uk-table-small uk-text-small">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th class="uk-text-center" width="50px">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="level in agentLevels.data" :key="level.id">
+              <td>
+                <router-link
+                  :to="{ name: 'agent-level-show', params: { id: level.id } }"
+                >
+                  {{ level.name }}
+                </router-link>
+              </td>
+              <td></td>
+              <td class="uk-text-center">
+                <router-link
+                  :to="{ name: 'agent-level-edit', params: { id: level.id } }"
+                >
+                  <i class="fas fa-edit"></i>
+                </router-link>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      agentLevels: [],
+      error: false,
+      errorMessage: ''
+    }
+  },
+
+  created() {
+    this.fetchAgentLevels()
+  },
+
+  methods: {
+    fetchAgentLevels() {
+      this.error = false
+      this.errorMessage = ''
+
+      this.$http
+        .get('/admin/v1/json/agent-levels', {
+          params: {}
+        })
+        .then(res => {
+          this.agentLevels = res.data
+        })
+        .catch(err => {
+          this.$root.notifyErrorHttp(this, err)
+        })
+    }
+  }
+}
+</script>

@@ -1,0 +1,19 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #ECEFF1;
+}
+
+.app--table_expand-button {
+    width: 30px !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.app--code-dark {
+    background-color: #37474F;
+    color: #FAFAFA;
+    border: solid 1px #263238;
+}
